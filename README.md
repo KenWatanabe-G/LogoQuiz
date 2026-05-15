@@ -1,6 +1,11 @@
-# ITエンジニア アイコン・マスコット クイズ
+# ITエンジニア アイコン & 企業ロゴ クイズ
 
-JavaのDukeをはじめとした、IT界の有名マスコットやブランドロゴを当てる30問クイズです。
+ITエンジニア向けの「アイコン当てクイズ」。
+スタート画面で 2 カテゴリから選べます:
+
+- **マスコット編 (30問)**: Java の Duke、Linux の Tux、Go の Gopher、Rust の Ferris … IT界の有名マスコット&ブランドロゴ
+- **IT企業編 (30問)**: GAFAM / Nvidia / OpenAI / Anthropic / Stripe / 楽天 / メルカリ / サイバーエージェント … 世界&日本のIT企業ロゴ
+
 **バックエンド不要・完全静的サイト**なのでGitHub Pages等に置くだけで動きます。
 
 ## デプロイ: GitHub Pages
@@ -33,22 +38,32 @@ python3 -m http.server 8765
 VS Codeなら Live Server 拡張、Node環境なら `npx serve` でも可。
 `index.html` を直接ブラウザで開いても動きますが、HTTP経由を推奨します。
 
-## 内容
+## 出題内容
+
+### マスコット編 (30問)
 
 - **マスコット17問**: Duke (Java) / Tux (Linux) / Bugdroid (Android) / Octocat (GitHub) / Gopher (Go) / Ferris (Rust) / Moby Dock (Docker) / GNU / elePHPant (PHP) / Beastie (BSD) / Camelia (Raku) / Firefox / Slonik (PostgreSQL) / Sakila (MySQL) / Suzanne (Blender) / Wilber (GIMP) / Hadoop象
 - **ブランドロゴ13問**: Kubernetes / Node.js / Python / Ruby / React / Vue.js / Angular / Cloudflare / Jenkins / Redis / MongoDB / Elasticsearch / Vim
+
+### IT企業編 (30問)
+
+- **グローバルメガキャップ10**: Google / Apple / Microsoft / Amazon / Meta / Nvidia / Intel / AMD / Tesla / IBM
+- **AI・SaaS 8**: OpenAI / Anthropic / Hugging Face / Stripe / Figma / Notion / Slack / Vercel
+- **コンシューマ・サービス 7**: Netflix / Spotify / Uber / Airbnb / Shopify / X (旧Twitter) / LinkedIn
+- **日本のIT 5**: 楽天 / LINE / メルカリ / サイバーエージェント / ソフトバンク
 
 ## ファイル構成
 
 ```
 ItQuiz/
-├── index.html       エントリーポイント
-├── style.css        ダーク基調のスタイル
-├── script.js        30問のクイズデータ + 出題ロジック
-├── favicon.svg      タブアイコン
-├── .nojekyll        GitHub PagesのJekyll処理を無効化
-├── images/          マスコット・ロゴ画像 (SVG/PNG, 30+点)
-├── screenshots/     動作確認時のスクリーンショット
+├── index.html              エントリーポイント (カテゴリ選択UI)
+├── style.css               ダーク基調のスタイル
+├── script.js               60問のクイズデータ + 2カテゴリ出題ロジック
+├── favicon.svg             タブアイコン
+├── .nojekyll               GitHub PagesのJekyll処理を無効化
+├── images/                 マスコット・技術ロゴ画像 (30+点)
+│   └── companies/          IT企業ロゴ画像 (30点)
+├── screenshots/            動作確認時のスクリーンショット
 └── README.md
 ```
 

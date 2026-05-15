@@ -3,29 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ITエンジニア アイコン・マスコット クイズ</title>
+  <title>ITエンジニア アイコン & 企業ロゴ クイズ</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main class="app">
     <header class="header">
-      <h1>ITエンジニア<br />アイコン・マスコット クイズ</h1>
-      <p class="subtitle">JavaのDukeなど、IT界の有名マスコット&ロゴ30問</p>
+      <h1>ITエンジニア<br />アイコン・企業ロゴ クイズ</h1>
+      <p class="subtitle">マスコット30問 / IT企業30問 — どっちで遊ぶ?</p>
     </header>
 
     <!-- Start screen -->
     <section id="screen-start" class="screen active">
-      <div class="card">
-        <h2>あなたはいくつ分かる?</h2>
-        <p>表示されたアイコン・マスコットがどの技術のものか、4択から選んでください。</p>
-        <ul class="examples">
-          <li>🐧 Tux / 🐹 Gopher / 🦀 Ferris / 🐳 Moby Dock ...</li>
-          <li>マスコット17問 + ブランドロゴ13問</li>
-          <li>合計30問・所要約5分</li>
-        </ul>
-        <button id="btn-start" class="btn btn-primary">クイズを始める</button>
+      <div class="category-grid">
+        <button class="category-card" data-category="mascot" type="button">
+          <div class="category-emoji">🐧🐹🦀</div>
+          <div class="category-name">マスコット編</div>
+          <div class="category-desc">
+            Java の Duke / Linux の Tux / Go の Gopher / Rust の Ferris…
+            IT 界のキャラクター & 技術ロゴ <strong>30問</strong>
+          </div>
+          <span class="category-cta">スタート →</span>
+        </button>
+
+        <button class="category-card" data-category="company" type="button">
+          <div class="category-emoji">🏢💼🌐</div>
+          <div class="category-name">IT企業編</div>
+          <div class="category-desc">
+            GAFAM / OpenAI / Stripe / 楽天 / メルカリ…
+            世界・日本のIT企業ロゴ <strong>30問</strong>
+          </div>
+          <span class="category-cta">スタート →</span>
+        </button>
       </div>
+      <p class="hint-row">どちらも4択・所要約5分。途中で「もう一度挑戦する」を押すとカテゴリ選択に戻れます。</p>
     </section>
 
     <!-- Quiz screen -->
@@ -42,7 +54,7 @@
         <div class="image-frame">
           <img id="q-image" alt="quiz icon" />
         </div>
-        <h3 id="q-prompt">このアイコン/マスコットは何の技術のもの?</h3>
+        <h3 id="q-prompt">このアイコン/マスコットはどの技術のもの?</h3>
         <div id="choices" class="choices"></div>
         <div id="feedback" class="feedback hidden"></div>
         <button id="btn-next" class="btn btn-primary hidden">次の問題 →</button>
@@ -52,10 +64,10 @@
     <!-- Result screen -->
     <section id="screen-result" class="screen">
       <div class="card">
-        <h2>結果発表 🎉</h2>
+        <h2 id="result-title">結果発表 🎉</h2>
         <div class="result-score">
           <span id="result-score">0</span>
-          <span class="result-total"> / 30</span>
+          <span class="result-total" id="result-total"> / 30</span>
         </div>
         <p id="result-rank" class="result-rank"></p>
         <div id="review-list" class="review-list"></div>

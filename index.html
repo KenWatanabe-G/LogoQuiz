@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITエンジニア アイコン・マスコット クイズ</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>ITエンジニア<br />アイコン・マスコット クイズ</h1>
+      <p class="subtitle">JavaのDukeなど、IT界の有名マスコット&ロゴ30問</p>
+    </header>
+
+    <!-- Start screen -->
+    <section id="screen-start" class="screen active">
+      <div class="card">
+        <h2>あなたはいくつ分かる?</h2>
+        <p>表示されたアイコン・マスコットがどの技術のものか、4択から選んでください。</p>
+        <ul class="examples">
+          <li>🐧 Tux / 🐹 Gopher / 🦀 Ferris / 🐳 Moby Dock ...</li>
+          <li>マスコット17問 + ブランドロゴ13問</li>
+          <li>合計30問・所要約5分</li>
+        </ul>
+        <button id="btn-start" class="btn btn-primary">クイズを始める</button>
+      </div>
+    </section>
+
+    <!-- Quiz screen -->
+    <section id="screen-quiz" class="screen">
+      <div class="progress">
+        <div class="progress-info">
+          <span id="q-counter">1 / 30</span>
+          <span id="score-display">正解: 0</span>
+        </div>
+        <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="image-frame">
+          <img id="q-image" alt="quiz icon" />
+        </div>
+        <h3 id="q-prompt">このアイコン/マスコットは何の技術のもの?</h3>
+        <div id="choices" class="choices"></div>
+        <div id="feedback" class="feedback hidden"></div>
+        <button id="btn-next" class="btn btn-primary hidden">次の問題 →</button>
+      </div>
+    </section>
+
+    <!-- Result screen -->
+    <section id="screen-result" class="screen">
+      <div class="card">
+        <h2>結果発表 🎉</h2>
+        <div class="result-score">
+          <span id="result-score">0</span>
+          <span class="result-total"> / 30</span>
+        </div>
+        <p id="result-rank" class="result-rank"></p>
+        <div id="review-list" class="review-list"></div>
+        <button id="btn-restart" class="btn btn-primary">もう一度挑戦する</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>画像出典: Wikimedia Commons / Simple Icons / GitHub Octodex / 各プロジェクト公式素材</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,11 +1,28 @@
 # ITエンジニア アイコン・マスコット クイズ
 
 JavaのDukeをはじめとした、IT界の有名マスコットやブランドロゴを当てる30問クイズです。
+**バックエンド不要・完全静的サイト**なのでGitHub Pages等に置くだけで動きます。
 
-## 起動方法
+## デプロイ: GitHub Pages
 
-ローカルにHTTPサーバーを立てて `index.html` を開いてください。
-`file://` 直開きでも一応動きますが、一部ブラウザでSVGがブロックされる可能性があるためHTTP経由を推奨します。
+1. GitHubで空のpublicリポジトリを作成 (例: `ItQuiz`)
+2. ローカルでリモート登録 → push
+
+   ```bash
+   cd /Users/ken.watanabe/Documents/ItQuiz
+   git remote add origin git@github.com:<your-account>/ItQuiz.git
+   git push -u origin main
+   ```
+
+3. リポジトリの **Settings → Pages** を開く
+   - **Source**: `Deploy from a branch`
+   - **Branch**: `main` / `(root)` を選択 → Save
+4. 数十秒待つと `https://<your-account>.github.io/ItQuiz/` で公開される
+
+`.nojekyll` を同梱済みなのでGitHub PagesのJekyll変換はスキップされ、ファイル名先頭`_`のSVG等もそのまま配信されます。
+リポジトリ名を `<your-account>.github.io` にすればルートドメインで公開されます。
+
+## ローカルで起動 (開発時)
 
 ```bash
 cd /Users/ken.watanabe/Documents/ItQuiz
@@ -14,6 +31,7 @@ python3 -m http.server 8765
 ```
 
 VS Codeなら Live Server 拡張、Node環境なら `npx serve` でも可。
+`index.html` を直接ブラウザで開いても動きますが、HTTP経由を推奨します。
 
 ## 内容
 
@@ -27,6 +45,8 @@ ItQuiz/
 ├── index.html       エントリーポイント
 ├── style.css        ダーク基調のスタイル
 ├── script.js        30問のクイズデータ + 出題ロジック
+├── favicon.svg      タブアイコン
+├── .nojekyll        GitHub PagesのJekyll処理を無効化
 ├── images/          マスコット・ロゴ画像 (SVG/PNG, 30+点)
 ├── screenshots/     動作確認時のスクリーンショット
 └── README.md

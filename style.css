@@ -90,8 +90,12 @@ html, body {
   gap: 14px;
   margin-bottom: 14px;
 }
+.category-grid .category-card-vtuber {
+  grid-column: 1 / -1;
+}
 @media (max-width: 560px) {
   .category-grid { grid-template-columns: 1fr; }
+  .category-grid .category-card-vtuber { grid-column: auto; }
 }
 
 .category-card {
@@ -145,6 +149,18 @@ html, body {
   box-shadow: 0 18px 44px rgba(255, 122, 92, 0.3);
 }
 .category-cta-art { color: #ffc97a !important; }
+
+.category-card[data-category="vtuber"] {
+  background:
+    linear-gradient(135deg, rgba(255, 105, 180, 0.12), rgba(150, 220, 255, 0.10)),
+    var(--surface);
+  border-color: rgba(255, 105, 180, 0.4);
+}
+.category-card[data-category="vtuber"]:hover {
+  border-color: rgba(255, 105, 180, 0.75);
+  box-shadow: 0 18px 44px rgba(255, 105, 180, 0.3);
+}
+.category-cta-vtuber { color: #ffa1d6 !important; }
 
 .category-emoji {
   font-size: 36px;

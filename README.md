@@ -1,12 +1,13 @@
 # ITエンジニア アイコン & 企業ロゴ クイズ
 
-ITエンジニア & クリエイター向けの「アイコン当てクイズ」。
-スタート画面で 4 カテゴリから選べます:
+ITエンジニア & クリエイター & VTuberファン向けの「アイコン当てクイズ」。
+スタート画面で 5 カテゴリから選べます:
 
 - **マスコット編 (30問)**: Java の Duke、Linux の Tux、Go の Gopher、Rust の Ferris … IT界の有名マスコット&ブランドロゴ
 - **IT企業編 (30問)**: GAFAM / Nvidia / OpenAI / Anthropic / Stripe / 楽天 / メルカリ / サイバーエージェント … 世界&日本のIT企業ロゴ
 - **上級者編 (30問)**: Hexley (Darwin) / Konqi (KDE) / Glenda (Plan 9) / Puffy (OpenBSD) / Haskell / OCaml / Erlang / Elixir / Terraform / Vault / Istio … マイナーマスコット & ニッチ言語 & DevOps
 - **アート職編 (30問)**: Photoshop / Illustrator / Figma / Blender / Maya / Houdini / DaVinci / Procreate / Unity / Unreal … デザイナー・3D・映像・ゲームアーティスト向けツール
+- **VTuber事務所編 (30問)**: ホロライブ / にじさんじ / ぶいすぽっ! / 774 inc. / VShojo / Re:AcT / あおぎり高校 / .LIVE / Kizuna AI … 国内外のVTuber事務所・グループ
 
 **バックエンド不要・完全静的サイト**なのでGitHub Pages等に置くだけで動きます。
 
@@ -69,19 +70,28 @@ VS Codeなら Live Server 拡張、Node環境なら `npx serve` でも可。
 - **ゲームエンジン 3**: Unity / Unreal Engine / Godot
 - **ドローイング 4**: Procreate / Krita / Affinity / Inkscape
 
+### VTuber事務所編 (30問)
+
+- **ホロライブ系列 11**: hololive プロダクション / ホロライブ (女性) / Hololive English / Hololive Indonesia / Hololive DEV_IS / Hololive Alternative / HOLOSTARS / HOLOSTARS English / ReGLOSS / Cover Corporation / INNK Music
+- **にじさんじ系列 3**: にじさんじ / NIJISANJI EN / ANYCOLOR
+- **国内・海外大手 5**: VShojo / ぶいすぽっ! / 774 inc. (Nanashi) / HoneyStrap / 有閑喫茶あにまーれ
+- **サブカル系・中堅 3**: あおぎり高校 / Re:AcT / MAHA5
+- **レジェンド・小規模・海外 8**: Kizuna AI / .LIVE / Palette Project / Yume Live / OWOZU / Yumegra / 進化娘 / Re Memories
+
 ## ファイル構成
 
 ```
 ItQuiz/
 ├── index.html              エントリーポイント (カテゴリ選択UI)
 ├── style.css               ダーク基調のスタイル
-├── script.js               120問のクイズデータ + 4カテゴリ出題ロジック
+├── script.js               150問のクイズデータ + 5カテゴリ出題ロジック
 ├── favicon.svg             タブアイコン
 ├── .nojekyll               GitHub PagesのJekyll処理を無効化
 ├── images/                 マスコット・技術ロゴ画像 (30+点)
 │   ├── companies/          IT企業ロゴ画像 (30点)
 │   ├── advanced/           上級者編マスコット・ロゴ画像 (30点)
-│   └── art/                アート職編ツールロゴ画像 (30点+α)
+│   ├── art/                アート職編ツールロゴ画像 (30点+α)
+│   └── vtuber/             VTuber事務所ロゴ画像 (30点)
 ├── screenshots/            動作確認時のスクリーンショット
 └── README.md
 ```

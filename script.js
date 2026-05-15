@@ -800,6 +800,202 @@ const QUESTIONS_ART = [
   },
 ];
 
+const QUESTIONS_VTUBER = [
+  // --- ホロライブ系列 (11) ---
+  {
+    image: "images/vtuber/hololive_production.svg",
+    answer: "hololive プロダクション",
+    hint: "Cover Corporationが運営するVTuber事務所の総称。",
+    choices: ["hololive プロダクション", "にじさんじ", "Brave Group", "774 inc."],
+  },
+  {
+    image: "images/vtuber/hololive.svg",
+    answer: "ホロライブ (女性タレント)",
+    hint: "Cover所属の女性VTuberグループ。ぺこら、マリン、すいせい等が所属。",
+    choices: ["ホロライブ (女性タレント)", "にじさんじ", "ぶいすぽっ!", ".LIVE"],
+  },
+  {
+    image: "images/vtuber/hololive_en.svg",
+    answer: "hololive English",
+    hint: "Myth/Council/Promise/Advent等を擁する英語圏ブランチ。",
+    choices: ["hololive English", "NIJISANJI EN", "VShojo", "Idol Corp EN"],
+  },
+  {
+    image: "images/vtuber/hololive_id.svg",
+    answer: "hololive Indonesia",
+    hint: "Moona Hoshinova、Kobo Kanaeru等が所属するインドネシア支部。",
+    choices: ["hololive Indonesia", "NIJISANJI ID", "Yume Live", "MyHolo TV"],
+  },
+  {
+    image: "images/vtuber/hololive_devis.jpg",
+    answer: "hololive DEV_IS",
+    hint: "2023年にスタートしたホロライブの新ブランチ。ReGLOSS / FLOW GLOWを擁する。",
+    choices: ["hololive DEV_IS", "hololive Stars", "Hololive Alternative", "Holostars"],
+  },
+  {
+    image: "images/vtuber/hololive_alt.svg",
+    answer: "Hololive Alternative",
+    hint: "ホロライブのメディアミックス・原作プロジェクト。",
+    choices: ["Hololive Alternative", "Holoearth", "Holo Universe", "Holo Saga"],
+  },
+  {
+    image: "images/vtuber/holostars.svg",
+    answer: "HOLOSTARS (ホロスターズ)",
+    hint: "Cover所属の男性VTuberグループ (旧称: ホロスターズ)。",
+    choices: ["HOLOSTARS (ホロスターズ)", "Pixel Stars", "Wactor", "Magni & Vesper"],
+  },
+  {
+    image: "images/vtuber/holostars_en.svg",
+    answer: "HOLOSTARS English",
+    hint: "TEMPUS / ARMIS等を擁する英語圏男性VTuberグループ。",
+    choices: ["HOLOSTARS English", "NIJISANJI EN", "Luxiem", "VShojo Boys"],
+  },
+  {
+    image: "images/vtuber/regloss.png",
+    answer: "ReGLOSS",
+    hint: "hololive DEV_IS第1期生5名のユニット。",
+    choices: ["ReGLOSS", "FLOW GLOW", "Hololive Promise", "Myth"],
+  },
+  {
+    image: "images/vtuber/cover_corp.svg",
+    answer: "Cover Corporation",
+    hint: "ホロライブプロダクションの運営会社。東証グロース上場。",
+    choices: ["Cover Corporation", "ANYCOLOR", "Brave Group", "774 inc."],
+  },
+  {
+    image: "images/vtuber/innk_music.svg",
+    answer: "INNK Music",
+    hint: "Cover傘下の音楽レーベル。星街すいせい等を音楽面で支援。",
+    choices: ["INNK Music", "hololive RECORDS", "RIOT MUSIC", "VIA Records"],
+  },
+
+  // --- にじさんじ系列 (3) ---
+  {
+    image: "images/vtuber/nijisanji.png",
+    answer: "にじさんじ",
+    hint: "ANYCOLOR運営。月ノ美兎、葛葉、叶等が所属する日本最大規模のVTuber事務所。",
+    choices: ["にじさんじ", "ホロライブ", "ぶいすぽっ!", "774 inc."],
+  },
+  {
+    image: "images/vtuber/nijisanji_en.png",
+    answer: "NIJISANJI EN",
+    hint: "LazuLight / Obsydia / Luxiem / Noctyx等を擁する英語圏ブランチ。",
+    choices: ["NIJISANJI EN", "hololive English", "VShojo", "Idol Corp EN"],
+  },
+  {
+    image: "images/vtuber/anycolor.png",
+    answer: "ANYCOLOR",
+    hint: "にじさんじ運営会社。2022年東証上場 (旧いちから)。",
+    choices: ["ANYCOLOR", "Cover Corporation", "Brave Group", "Iridori"],
+  },
+
+  // --- 海外系 (1) ---
+  {
+    image: "images/vtuber/vshojo.png",
+    answer: "VShojo",
+    hint: "アメリカ発のVTuberタレントエージェンシー。2025年に解散。",
+    choices: ["VShojo", "hololive English", "Idol Corp EN", "Phase Connect"],
+  },
+
+  // --- 日本の中堅 (4) ---
+  {
+    image: "images/vtuber/vspo.png",
+    answer: "ぶいすぽっ! (VSPO!)",
+    hint: "Brave Group傘下のeスポーツ特化女性VTuber事務所。",
+    choices: ["ぶいすぽっ! (VSPO!)", "774 inc.", "Re:AcT", "あおぎり高校"],
+  },
+  {
+    image: "images/vtuber/nanashi.png",
+    answer: "774 inc. (Nanashi)",
+    hint: "ハニスト・あにまーれ・SugarLyric・ぶいなる・ハニカム等を擁する企業。",
+    choices: ["774 inc. (Nanashi)", "Iridori", "Brave Group", "ANYCOLOR"],
+  },
+  {
+    image: "images/vtuber/honeystrap.png",
+    answer: "HoneyStrap (ハニーストラップ)",
+    hint: "774 inc.傘下。因幡はねる・島村シャルロット等。",
+    choices: ["HoneyStrap (ハニーストラップ)", "SugarLyric", "ハニカム", "有閑喫茶あにまーれ"],
+  },
+  {
+    image: "images/vtuber/animare.png",
+    answer: "有閑喫茶あにまーれ",
+    hint: "774 inc.傘下。日ノ隈らん、宗谷いちか等が所属。",
+    choices: ["有閑喫茶あにまーれ", "HoneyStrap", "Live LAB", "ハニカム"],
+  },
+
+  // --- 中堅・サブカル系 (3) ---
+  {
+    image: "images/vtuber/aogiri.svg",
+    answer: "あおぎり高校",
+    hint: "緑のチェック柄が特徴のサブカル系VTuberグループ。栗駒こまる、千秋すなお等。",
+    choices: ["あおぎり高校", "ぶいすぽっ!", "Re:AcT", "Yorokobi"],
+  },
+  {
+    image: "images/vtuber/reat.png",
+    answer: "Re:AcT",
+    hint: "夜霧リリカ、藍沢エマ等が所属していたVTuber事務所 (2024年解散)。",
+    choices: ["Re:AcT", "Re Memories", "ReGLOSS", "Re:AnimA"],
+  },
+  {
+    image: "images/vtuber/maha5.png",
+    answer: "MAHA5 (マハファイブ)",
+    hint: "Brave Group傘下。男性VTuberグループ。",
+    choices: ["MAHA5 (マハファイブ)", "Holostars", "Re:AcT", "VOLTACTION"],
+  },
+
+  // --- レジェンド・古参 (2) ---
+  {
+    image: "images/vtuber/kizuna_ai.png",
+    answer: "Kizuna AI (キズナアイ)",
+    hint: "『バーチャルYouTuber』という言葉を生んだ元祖VTuber。2022年無期限活動休止。",
+    choices: ["Kizuna AI (キズナアイ)", "ミライアカリ", "電脳少女シロ", "輝夜月"],
+  },
+  {
+    image: "images/vtuber/dotlive.png",
+    answer: ".LIVE (どっとライブ)",
+    hint: "電脳少女シロ、樋口楓 (前)、もこ田めめめ等が所属したVTuberグループ。",
+    choices: [".LIVE (どっとライブ)", "Re:AcT", "MAHA5", "Yorokobi"],
+  },
+
+  // --- 小規模・海外系 (6) ---
+  {
+    image: "images/vtuber/palette_project.png",
+    answer: "Palette Project",
+    hint: "小規模のVTuberプロジェクト。",
+    choices: ["Palette Project", "PRISM Project", "Prism Project", "Phase Connect"],
+  },
+  {
+    image: "images/vtuber/yume_live.png",
+    answer: "Yume Live (ゆめライブ)",
+    hint: "インドネシアのバーチャルYouTuberエージェンシー。",
+    choices: ["Yume Live (ゆめライブ)", "Yumegra", "Re Memories", "OWOZU"],
+  },
+  {
+    image: "images/vtuber/owozu.png",
+    answer: "OWOZU",
+    hint: "インドネシアのバーチャルYouTuberグループ。",
+    choices: ["OWOZU", "Yume Live", "MAHA5", "Yumegra"],
+  },
+  {
+    image: "images/vtuber/yumegra.png",
+    answer: "Yumegra (ユメグラ)",
+    hint: "インドネシア系のVTuberグループ。",
+    choices: ["Yumegra (ユメグラ)", "Yume Live", "OWOZU", "Re Memories"],
+  },
+  {
+    image: "images/vtuber/shinka_musume.png",
+    answer: "進化娘 (Shinka Musume)",
+    hint: "中華系VTuberグループ。",
+    choices: ["進化娘 (Shinka Musume)", "Re Memories", "Palette Project", "あおぎり高校"],
+  },
+  {
+    image: "images/vtuber/re_memories.png",
+    answer: "Re Memories",
+    hint: "インドネシアのVTuberエージェンシー。",
+    choices: ["Re Memories", "Re:AcT", "Yume Live", "Palette Project"],
+  },
+];
+
 // ===========================================================================
 // Categories
 // ===========================================================================
@@ -829,6 +1025,12 @@ const CATEGORIES = {
     label: "アート職編",
     questions: QUESTIONS_ART,
     prompt: "このロゴはどの制作ツールのもの?",
+    feedbackPrefix: (q) => `これは <strong>${q.answer}</strong> のロゴです。`,
+  },
+  vtuber: {
+    label: "VTuber事務所編",
+    questions: QUESTIONS_VTUBER,
+    prompt: "このロゴはどのVTuber事務所・グループのもの?",
     feedbackPrefix: (q) => `これは <strong>${q.answer}</strong> のロゴです。`,
   },
 };

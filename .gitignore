@@ -1,6 +1,9 @@
 # Playwright MCP artifacts
 .playwright-mcp/
 
+# Claude Code harness state
+.claude/
+
 # macOS
 .DS_Store
 

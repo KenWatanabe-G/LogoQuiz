@@ -1,11 +1,12 @@
 # ITエンジニア アイコン & 企業ロゴ クイズ
 
-ITエンジニア向けの「アイコン当てクイズ」。
-スタート画面で 3 カテゴリから選べます:
+ITエンジニア & クリエイター向けの「アイコン当てクイズ」。
+スタート画面で 4 カテゴリから選べます:
 
 - **マスコット編 (30問)**: Java の Duke、Linux の Tux、Go の Gopher、Rust の Ferris … IT界の有名マスコット&ブランドロゴ
 - **IT企業編 (30問)**: GAFAM / Nvidia / OpenAI / Anthropic / Stripe / 楽天 / メルカリ / サイバーエージェント … 世界&日本のIT企業ロゴ
 - **上級者編 (30問)**: Hexley (Darwin) / Konqi (KDE) / Glenda (Plan 9) / Puffy (OpenBSD) / Haskell / OCaml / Erlang / Elixir / Terraform / Vault / Istio … マイナーマスコット & ニッチ言語 & DevOps
+- **アート職編 (30問)**: Photoshop / Illustrator / Figma / Blender / Maya / Houdini / DaVinci / Procreate / Unity / Unreal … デザイナー・3D・映像・ゲームアーティスト向けツール
 
 **バックエンド不要・完全静的サイト**なのでGitHub Pages等に置くだけで動きます。
 
@@ -59,18 +60,28 @@ VS Codeなら Live Server 拡張、Node環境なら `npx serve` でも可。
 - **ニッチ言語12**: Haskell / OCaml / Erlang / Elixir / Clojure / Crystal / F# / R / Zig / Nim / Scala / Kotlin
 - **DevOps / インフラ8**: Terraform / Ansible / Vagrant / Consul / Vault / Istio / Argo CD / Helm
 
+### アート職編 (30問)
+
+- **Adobe Creative Cloud 8**: Photoshop / Illustrator / InDesign / Premiere Pro / After Effects / Lightroom / XD / Substance 3D
+- **UI/UX 6**: Figma / Sketch / Framer / Canva / Miro / InVision
+- **3D / VFX 6**: Blender / Maya / Cinema 4D / Houdini / ZBrush / SketchUp
+- **映像・アニメーション 3**: DaVinci Resolve / Toon Boom Harmony / Spine
+- **ゲームエンジン 3**: Unity / Unreal Engine / Godot
+- **ドローイング 4**: Procreate / Krita / Affinity / Inkscape
+
 ## ファイル構成
 
 ```
 ItQuiz/
 ├── index.html              エントリーポイント (カテゴリ選択UI)
 ├── style.css               ダーク基調のスタイル
-├── script.js               90問のクイズデータ + 3カテゴリ出題ロジック
+├── script.js               120問のクイズデータ + 4カテゴリ出題ロジック
 ├── favicon.svg             タブアイコン
 ├── .nojekyll               GitHub PagesのJekyll処理を無効化
 ├── images/                 マスコット・技術ロゴ画像 (30+点)
 │   ├── companies/          IT企業ロゴ画像 (30点)
-│   └── advanced/           上級者編用マスコット・ロゴ画像 (30点)
+│   ├── advanced/           上級者編マスコット・ロゴ画像 (30点)
+│   └── art/                アート職編ツールロゴ画像 (30点+α)
 ├── screenshots/            動作確認時のスクリーンショット
 └── README.md
 ```

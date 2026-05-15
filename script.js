@@ -606,6 +606,200 @@ const QUESTIONS_ADVANCED = [
   },
 ];
 
+const QUESTIONS_ART = [
+  // --- Adobe Creative Cloud (8) ---
+  {
+    image: "images/art/adobe_photoshop.svg",
+    answer: "Adobe Photoshop",
+    hint: "『Ps』。ラスター画像編集の業界標準。1990年初リリース。",
+    choices: ["Adobe Photoshop", "Adobe Illustrator", "Affinity Photo", "GIMP"],
+  },
+  {
+    image: "images/art/adobe_illustrator.svg",
+    answer: "Adobe Illustrator",
+    hint: "『Ai』。ベクター描画ソフトの定番。",
+    choices: ["Adobe Illustrator", "Adobe Photoshop", "Affinity Designer", "Inkscape"],
+  },
+  {
+    image: "images/art/adobe_indesign.svg",
+    answer: "Adobe InDesign",
+    hint: "『Id』。雑誌・書籍など組版用のDTPアプリ。",
+    choices: ["Adobe InDesign", "QuarkXPress", "Affinity Publisher", "Scribus"],
+  },
+  {
+    image: "images/art/adobe_premiere.svg",
+    answer: "Adobe Premiere Pro",
+    hint: "『Pr』。プロ向けノンリニア動画編集ソフト。",
+    choices: ["Adobe Premiere Pro", "Final Cut Pro", "DaVinci Resolve", "Avid Media Composer"],
+  },
+  {
+    image: "images/art/adobe_aftereffects.svg",
+    answer: "Adobe After Effects",
+    hint: "『Ae』。モーショングラフィックス・VFXの定番。",
+    choices: ["Adobe After Effects", "Apple Motion", "HitFilm", "Fusion"],
+  },
+  {
+    image: "images/art/adobe_lightroom.svg",
+    answer: "Adobe Lightroom",
+    hint: "『Lr』。写真RAW現像・カタログ管理。",
+    choices: ["Adobe Lightroom", "Capture One", "DxO PhotoLab", "Apple Photos"],
+  },
+  {
+    image: "images/art/adobe_xd.svg",
+    answer: "Adobe XD",
+    hint: "『Xd』。AdobeのUI/UXデザインツール (新規開発は終了)。",
+    choices: ["Adobe XD", "Figma", "Sketch", "Framer"],
+  },
+  {
+    image: "images/art/adobe_substance.svg",
+    answer: "Adobe Substance 3D",
+    hint: "Painter / Designer / Sampler / Stagerからなる3Dテクスチャリング製品群。",
+    choices: ["Adobe Substance 3D", "Marvelous Designer", "Quixel Mixer", "Mari"],
+  },
+
+  // --- UI/UX (6) ---
+  {
+    image: "images/art/figma.svg",
+    answer: "Figma",
+    hint: "ブラウザベースで共同編集できるUIデザインツール。",
+    choices: ["Figma", "Sketch", "Adobe XD", "Penpot"],
+  },
+  {
+    image: "images/art/sketch.svg",
+    answer: "Sketch",
+    hint: "Mac専用のUIデザインツール。ダイヤモンド型のロゴ。",
+    choices: ["Sketch", "Figma", "Adobe XD", "Affinity Designer"],
+  },
+  {
+    image: "images/art/framer.svg",
+    answer: "Framer",
+    hint: "デザインから本物のWebサイトまで作れるノーコード+コード両対応ツール。",
+    choices: ["Framer", "Webflow", "Plasmic", "Figma Sites"],
+  },
+  {
+    image: "images/art/canva.svg",
+    answer: "Canva",
+    hint: "オーストラリア発のオンライングラフィックデザインツール。テンプレートが豊富。",
+    choices: ["Canva", "Adobe Express", "Visme", "Crello"],
+  },
+  {
+    image: "images/art/miro.svg",
+    answer: "Miro",
+    hint: "オンラインホワイトボード。ワークショップ・ブレストの定番。",
+    choices: ["Miro", "Mural", "FigJam", "Whimsical"],
+  },
+  {
+    image: "images/art/invision.svg",
+    answer: "InVision",
+    hint: "プロトタイピング・デザインコラボの老舗。2024年末にサービス終了。",
+    choices: ["InVision", "Marvel", "Zeplin", "Avocode"],
+  },
+
+  // --- 3D / VFX (6) ---
+  {
+    image: "images/art/blender.svg",
+    answer: "Blender",
+    hint: "無料・オープンソースの統合3DCGスイート。",
+    choices: ["Blender", "Maya", "Cinema 4D", "3ds Max"],
+  },
+  {
+    image: "images/art/autodeskmaya.svg",
+    answer: "Autodesk Maya",
+    hint: "AutodeskのハイエンドCGソフト。映画・ハイエンドアニメで定番。",
+    choices: ["Autodesk Maya", "Autodesk 3ds Max", "Blender", "MotionBuilder"],
+  },
+  {
+    image: "images/art/cinema4d.svg",
+    answer: "Cinema 4D (Maxon)",
+    hint: "Maxonのモーショングラフィックスで支配的な3Dソフト。",
+    choices: ["Cinema 4D (Maxon)", "Houdini", "Modo", "LightWave"],
+  },
+  {
+    image: "images/art/houdini.svg",
+    answer: "Houdini (SideFX)",
+    hint: "プロシージャル & VFX特化。VFX業界のシミュレーション標準。",
+    choices: ["Houdini (SideFX)", "Cinema 4D", "Maya", "Nuke"],
+  },
+  {
+    image: "images/art/zbrush.svg",
+    answer: "ZBrush (Maxon Pixologic)",
+    hint: "デジタルスカルプティングの代表格。高ポリゴンを軽快に扱える。",
+    choices: ["ZBrush (Maxon Pixologic)", "Mudbox", "3D-Coat", "Nomad Sculpt"],
+  },
+  {
+    image: "images/art/sketchup.svg",
+    answer: "SketchUp",
+    hint: "建築・インテリアで使われる軽快な3Dモデリング。",
+    choices: ["SketchUp", "Rhinoceros", "FreeCAD", "Fusion 360"],
+  },
+
+  // --- 映像・アニメーション (3) ---
+  {
+    image: "images/art/davinciresolve.svg",
+    answer: "DaVinci Resolve (Blackmagic)",
+    hint: "カラーグレーディング起源のオールインワン映像編集。無料版も強力。",
+    choices: ["DaVinci Resolve (Blackmagic)", "Adobe Premiere Pro", "Final Cut Pro", "Vegas Pro"],
+  },
+  {
+    image: "images/art/toonboom.svg",
+    answer: "Toon Boom Harmony",
+    hint: "TV/映画用の2Dアニメ制作ソフト。シンプソンズ等が採用。",
+    choices: ["Toon Boom Harmony", "OpenToonz", "Moho", "TVPaint"],
+  },
+  {
+    image: "images/art/spine.svg",
+    answer: "Spine (Esoteric Software)",
+    hint: "ゲーム向けの2Dスケルタルアニメーションツール。",
+    choices: ["Spine (Esoteric Software)", "DragonBones", "Live2D", "Rive"],
+  },
+
+  // --- ゲームエンジン (3) ---
+  {
+    image: "images/art/unity.svg",
+    answer: "Unity",
+    hint: "クロスプラットフォームのゲームエンジン。インディから商用まで幅広い。",
+    choices: ["Unity", "Unreal Engine", "Godot", "Stride"],
+  },
+  {
+    image: "images/art/unrealengine.svg",
+    answer: "Unreal Engine (Epic)",
+    hint: "Epic Games製。フォトリアル系&AAAタイトルの標準。",
+    choices: ["Unreal Engine (Epic)", "Unity", "CryEngine", "Lumberyard / O3DE"],
+  },
+  {
+    image: "images/art/godotengine.svg",
+    answer: "Godot Engine",
+    hint: "MITライセンスの無料オープンソースゲームエンジン。",
+    choices: ["Godot Engine", "Unity", "Defold", "Stride"],
+  },
+
+  // --- ドローイング/その他 (4) ---
+  {
+    image: "images/art/procreate.png",
+    answer: "Procreate",
+    hint: "iPad専用のお絵かきアプリの定番。買い切り。",
+    choices: ["Procreate", "Adobe Fresco", "Clip Studio Paint", "Concepts"],
+  },
+  {
+    image: "images/art/krita.svg",
+    answer: "Krita",
+    hint: "KDE発・無料のデジタルペイントソフト。マスコットは『Kiki』のリス。",
+    choices: ["Krita", "MyPaint", "GIMP", "Clip Studio Paint"],
+  },
+  {
+    image: "images/art/affinity.svg",
+    answer: "Affinity (Serif)",
+    hint: "Photo/Designer/Publisher の3製品スイート。買い切り型でAdobeの代替。",
+    choices: ["Affinity (Serif)", "Pixelmator Pro", "Corel Suite", "Sketchbook"],
+  },
+  {
+    image: "images/art/inkscape.svg",
+    answer: "Inkscape",
+    hint: "無料・オープンソースのベクター描画ソフト。SVGネイティブ。",
+    choices: ["Inkscape", "Adobe Illustrator", "Affinity Designer", "Boxy SVG"],
+  },
+];
+
 // ===========================================================================
 // Categories
 // ===========================================================================
@@ -630,6 +824,12 @@ const CATEGORIES = {
       q.subject
         ? `『${q.subject}』は <strong>${q.answer}</strong> のロゴ/マスコットです。`
         : `これは <strong>${q.answer}</strong> のロゴです。`,
+  },
+  art: {
+    label: "アート職編",
+    questions: QUESTIONS_ART,
+    prompt: "このロゴはどの制作ツールのもの?",
+    feedbackPrefix: (q) => `これは <strong>${q.answer}</strong> のロゴです。`,
   },
 };
 

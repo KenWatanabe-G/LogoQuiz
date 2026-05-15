@@ -90,12 +90,8 @@ html, body {
   gap: 14px;
   margin-bottom: 14px;
 }
-.category-grid .category-card-advanced {
-  grid-column: 1 / -1;
-}
 @media (max-width: 560px) {
   .category-grid { grid-template-columns: 1fr; }
-  .category-grid .category-card-advanced { grid-column: auto; }
 }
 
 .category-card {
@@ -137,6 +133,18 @@ html, body {
   box-shadow: 0 18px 44px rgba(255, 93, 108, 0.3);
 }
 .category-cta-advanced { color: #ff8b97 !important; }
+
+.category-card[data-category="art"] {
+  background:
+    linear-gradient(135deg, rgba(255, 184, 77, 0.12), rgba(255, 92, 168, 0.10)),
+    var(--surface);
+  border-color: rgba(255, 184, 77, 0.4);
+}
+.category-card[data-category="art"]:hover {
+  border-color: rgba(255, 184, 77, 0.75);
+  box-shadow: 0 18px 44px rgba(255, 122, 92, 0.3);
+}
+.category-cta-art { color: #ffc97a !important; }
 
 .category-emoji {
   font-size: 36px;

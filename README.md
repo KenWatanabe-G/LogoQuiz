@@ -1,10 +1,11 @@
 # ITエンジニア アイコン & 企業ロゴ クイズ
 
 ITエンジニア向けの「アイコン当てクイズ」。
-スタート画面で 2 カテゴリから選べます:
+スタート画面で 3 カテゴリから選べます:
 
 - **マスコット編 (30問)**: Java の Duke、Linux の Tux、Go の Gopher、Rust の Ferris … IT界の有名マスコット&ブランドロゴ
 - **IT企業編 (30問)**: GAFAM / Nvidia / OpenAI / Anthropic / Stripe / 楽天 / メルカリ / サイバーエージェント … 世界&日本のIT企業ロゴ
+- **上級者編 (30問)**: Hexley (Darwin) / Konqi (KDE) / Glenda (Plan 9) / Puffy (OpenBSD) / Haskell / OCaml / Erlang / Elixir / Terraform / Vault / Istio … マイナーマスコット & ニッチ言語 & DevOps
 
 **バックエンド不要・完全静的サイト**なのでGitHub Pages等に置くだけで動きます。
 
@@ -52,17 +53,24 @@ VS Codeなら Live Server 拡張、Node環境なら `npx serve` でも可。
 - **コンシューマ・サービス 7**: Netflix / Spotify / Uber / Airbnb / Shopify / X (旧Twitter) / LinkedIn
 - **日本のIT 5**: 楽天 / LINE / メルカリ / サイバーエージェント / ソフトバンク
 
+### 上級者編 (30問)
+
+- **マイナーマスコット10**: Hexley (Darwin) / Konqi (KDE) / Glenda (Plan 9) / Puffy (OpenBSD) / Geeko (openSUSE) / RabbitMQ / Thunderbird / Deno / GNU Bash / Lua
+- **ニッチ言語12**: Haskell / OCaml / Erlang / Elixir / Clojure / Crystal / F# / R / Zig / Nim / Scala / Kotlin
+- **DevOps / インフラ8**: Terraform / Ansible / Vagrant / Consul / Vault / Istio / Argo CD / Helm
+
 ## ファイル構成
 
 ```
 ItQuiz/
 ├── index.html              エントリーポイント (カテゴリ選択UI)
 ├── style.css               ダーク基調のスタイル
-├── script.js               60問のクイズデータ + 2カテゴリ出題ロジック
+├── script.js               90問のクイズデータ + 3カテゴリ出題ロジック
 ├── favicon.svg             タブアイコン
 ├── .nojekyll               GitHub PagesのJekyll処理を無効化
 ├── images/                 マスコット・技術ロゴ画像 (30+点)
-│   └── companies/          IT企業ロゴ画像 (30点)
+│   ├── companies/          IT企業ロゴ画像 (30点)
+│   └── advanced/           上級者編用マスコット・ロゴ画像 (30点)
 ├── screenshots/            動作確認時のスクリーンショット
 └── README.md
 ```

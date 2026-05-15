@@ -408,6 +408,204 @@ const QUESTIONS_COMPANY = [
   },
 ];
 
+const QUESTIONS_ADVANCED = [
+  // --- マイナー・マスコット (10) ---
+  {
+    image: "images/advanced/hexley.gif",
+    subject: "Hexley",
+    answer: "Darwin (macOS)",
+    hint: "Apple製OSの基盤。三叉槍を持つカモノハシ。BSD Daemonに似たデザイン。",
+    choices: ["Darwin (macOS)", "FreeBSD", "NetBSD", "GNU/Hurd"],
+  },
+  {
+    image: "images/advanced/konqi.svg",
+    subject: "Konqi",
+    answer: "KDE",
+    hint: "Linuxデスクトップ環境のマスコット。緑のドラゴン。",
+    choices: ["KDE", "GNOME", "XFCE", "Cinnamon"],
+  },
+  {
+    image: "images/advanced/glenda.jpg",
+    subject: "Glenda",
+    answer: "Plan 9 from Bell Labs",
+    hint: "Bell Labs製OSのうさぎ。Renée French作で、GoのGopherの源流。",
+    choices: ["Plan 9 from Bell Labs", "Inferno OS", "MINIX", "Multics"],
+  },
+  {
+    image: "images/advanced/puffy.gif",
+    subject: "Puffy",
+    answer: "OpenBSD",
+    hint: "セキュリティ最重視のBSD系OSのマスコット。BlowfishやOpenSSHにちなむハリセンボン系。",
+    choices: ["OpenBSD", "FreeBSD", "NetBSD", "DragonFly BSD"],
+  },
+  {
+    image: "images/advanced/opensuse.svg",
+    subject: "Geeko (カメレオン)",
+    answer: "openSUSE",
+    hint: "ドイツ発のLinuxディストリ。緑のカメレオンを様式化したロゴ。",
+    choices: ["openSUSE", "Fedora", "Arch Linux", "Mandriva"],
+  },
+  {
+    image: "images/advanced/rabbitmq.svg",
+    subject: "うさぎ",
+    answer: "RabbitMQ",
+    hint: "Erlang製のAMQP実装メッセージブローカー。",
+    choices: ["RabbitMQ", "Apache Kafka", "Apache Pulsar", "NATS"],
+  },
+  {
+    image: "images/advanced/thunderbird.svg",
+    subject: "サンダーバード",
+    answer: "Mozilla Thunderbird",
+    hint: "Mozilla財団のオープンソースメールクライアント。",
+    choices: ["Mozilla Thunderbird", "Apple Mail", "Microsoft Outlook", "Spark"],
+  },
+  {
+    image: "images/advanced/deno.svg",
+    subject: "恐竜",
+    answer: "Deno",
+    hint: "Ryan Dahl が Node.js の反省を活かして作ったTypeScript標準ランタイム。",
+    choices: ["Deno", "Node.js", "Bun", "tsx"],
+  },
+  {
+    image: "images/advanced/gnubash.svg",
+    subject: "GNU Bashロゴ",
+    answer: "GNU Bash",
+    hint: "Bourne Again SHell。GNUプロジェクト製のデフォルトシェル。",
+    choices: ["GNU Bash", "Zsh", "Fish", "Ksh"],
+  },
+  {
+    image: "images/advanced/lua.svg",
+    subject: "月ロゴ",
+    answer: "Lua",
+    hint: "ブラジル発の組込み向けスクリプト言語。Nginx/Redis/Neovim等に組込まれる。",
+    choices: ["Lua", "Tcl", "Squirrel", "Pawn"],
+  },
+
+  // --- ニッチ言語 (12) ---
+  {
+    image: "images/advanced/haskell.svg",
+    answer: "Haskell",
+    hint: "純粋関数型・遅延評価・強い型システム。ラムダ記号がトレードマーク。",
+    choices: ["Haskell", "Idris", "Agda", "PureScript"],
+  },
+  {
+    image: "images/advanced/ocaml.svg",
+    answer: "OCaml",
+    hint: "MLファミリーの関数型言語。Rust/ReasonML/F#に影響。Camel = OCamel。",
+    choices: ["OCaml", "Standard ML", "Haskell", "F#"],
+  },
+  {
+    image: "images/advanced/erlang.svg",
+    answer: "Erlang",
+    hint: "Ericssonの電話交換機用に開発された並行・分散指向言語。Actor model。",
+    choices: ["Erlang", "Elixir", "Go", "Pony"],
+  },
+  {
+    image: "images/advanced/elixir.svg",
+    answer: "Elixir",
+    hint: "BEAM (ErlangVM) 上で動くRuby風シンタックスの関数型言語。Phoenixで有名。",
+    choices: ["Elixir", "Erlang", "Crystal", "Gleam"],
+  },
+  {
+    image: "images/advanced/clojure.svg",
+    answer: "Clojure",
+    hint: "JVM上のLisp方言。不変データ構造とSTM、Rich Hickey作。",
+    choices: ["Clojure", "Common Lisp", "Scheme", "Racket"],
+  },
+  {
+    image: "images/advanced/crystal.svg",
+    answer: "Crystal",
+    hint: "Ruby風シンタックス・コンパイル/静的型付け。",
+    choices: ["Crystal", "Ruby", "Elixir", "Nim"],
+  },
+  {
+    image: "images/advanced/fsharp.svg",
+    answer: "F#",
+    hint: ".NET上のMLファミリー関数型言語。Microsoft Research発。",
+    choices: ["F#", "OCaml", "Scala", "Haskell"],
+  },
+  {
+    image: "images/advanced/r.svg",
+    answer: "R言語",
+    hint: "統計解析・データ可視化の定番。Tidyverse/ggplot2エコシステム。",
+    choices: ["R言語", "Julia", "MATLAB", "SAS"],
+  },
+  {
+    image: "images/advanced/zig.svg",
+    answer: "Zig",
+    hint: "Cの後継を目指すシステム言語。Andrew Kelley作。comptimeが特徴。",
+    choices: ["Zig", "Rust", "Odin", "V"],
+  },
+  {
+    image: "images/advanced/nim.svg",
+    answer: "Nim",
+    hint: "Python風シンタックスでCにコンパイル。マクロが強力。",
+    choices: ["Nim", "Crystal", "V", "Cython"],
+  },
+  {
+    image: "images/advanced/scala.svg",
+    answer: "Scala",
+    hint: "JVM上の関数型+オブジェクト指向。Apache Sparkの主言語。",
+    choices: ["Scala", "Kotlin", "Groovy", "Clojure"],
+  },
+  {
+    image: "images/advanced/kotlin.svg",
+    answer: "Kotlin",
+    hint: "JetBrains製。2017年Google公認のAndroid公式言語に。",
+    choices: ["Kotlin", "Scala", "Swift", "Dart"],
+  },
+
+  // --- DevOps / インフラ (8) ---
+  {
+    image: "images/advanced/terraform.svg",
+    answer: "Terraform",
+    hint: "HashiCorp製マルチクラウドIaC。HCLでインフラを宣言的に記述。",
+    choices: ["Terraform", "Pulumi", "AWS CDK", "Crossplane"],
+  },
+  {
+    image: "images/advanced/ansible.svg",
+    answer: "Ansible",
+    hint: "Red Hatのエージェントレス構成管理ツール。YAMLでPlaybookを書く。",
+    choices: ["Ansible", "Puppet", "Chef", "SaltStack"],
+  },
+  {
+    image: "images/advanced/vagrant.svg",
+    answer: "Vagrant",
+    hint: "HashiCorp製の開発用VM/コンテナ管理。Vagrantfileで再現可能環境。",
+    choices: ["Vagrant", "Docker Compose", "VirtualBox", "Multipass"],
+  },
+  {
+    image: "images/advanced/consul.svg",
+    answer: "Consul",
+    hint: "HashiCorpのサービスディスカバリ&サービスメッシュ。",
+    choices: ["Consul", "etcd", "Zookeeper", "Eureka"],
+  },
+  {
+    image: "images/advanced/vault.svg",
+    answer: "Vault",
+    hint: "HashiCorpのシークレット管理。動的シークレット・暗号化サービスを提供。",
+    choices: ["Vault", "AWS Secrets Manager", "1Password", "Doppler"],
+  },
+  {
+    image: "images/advanced/istio.svg",
+    answer: "Istio",
+    hint: "Envoyベースのサービスメッシュ。Google/IBM/Lyft発。",
+    choices: ["Istio", "Linkerd", "Consul Connect", "Cilium"],
+  },
+  {
+    image: "images/advanced/argo.svg",
+    answer: "Argo CD",
+    hint: "Kubernetes向けGitOpsデプロイツール。CNCF Graduated。",
+    choices: ["Argo CD", "Flux CD", "Spinnaker", "Jenkins X"],
+  },
+  {
+    image: "images/advanced/helm.svg",
+    answer: "Helm",
+    hint: "Kubernetesのパッケージマネージャ。Chart形式でアプリを配布。",
+    choices: ["Helm", "Kustomize", "Operator Framework", "Tanka"],
+  },
+];
+
 // ===========================================================================
 // Categories
 // ===========================================================================
@@ -423,6 +621,15 @@ const CATEGORIES = {
     questions: QUESTIONS_COMPANY,
     prompt: "このロゴはどの企業のもの?",
     feedbackPrefix: (q) => `これは <strong>${q.answer}</strong> のロゴです。`,
+  },
+  advanced: {
+    label: "上級者編",
+    questions: QUESTIONS_ADVANCED,
+    prompt: "このロゴ・マスコットはどの技術のもの? (上級者編)",
+    feedbackPrefix: (q) =>
+      q.subject
+        ? `『${q.subject}』は <strong>${q.answer}</strong> のロゴ/マスコットです。`
+        : `これは <strong>${q.answer}</strong> のロゴです。`,
   },
 };
 

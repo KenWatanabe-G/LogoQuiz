@@ -1,13 +1,13 @@
 # ITエンジニア アイコン & 企業ロゴ クイズ
 
-ITエンジニア & クリエイター & VTuberファン向けの「アイコン当てクイズ」。
+ITエンジニア & クリエイター & ポケカプレイヤー向けの「アイコン当て+立ち回り」クイズ。
 スタート画面で 5 カテゴリから選べます:
 
 - **マスコット編 (30問)**: Java の Duke、Linux の Tux、Go の Gopher、Rust の Ferris … IT界の有名マスコット&ブランドロゴ
 - **IT企業編 (30問)**: GAFAM / Nvidia / OpenAI / Anthropic / Stripe / 楽天 / メルカリ / サイバーエージェント … 世界&日本のIT企業ロゴ
 - **上級者編 (30問)**: Hexley (Darwin) / Konqi (KDE) / Glenda (Plan 9) / Puffy (OpenBSD) / Haskell / OCaml / Erlang / Elixir / Terraform / Vault / Istio … マイナーマスコット & ニッチ言語 & DevOps
 - **アート職編 (30問)**: Photoshop / Illustrator / Figma / Blender / Maya / Houdini / DaVinci / Procreate / Unity / Unreal … デザイナー・3D・映像・ゲームアーティスト向けツール
-- **VTuber事務所編 (30問)**: ホロライブ / にじさんじ / ぶいすぽっ! / 774 inc. / VShojo / Re:AcT / あおぎり高校 / .LIVE / Kizuna AI … 国内外のVTuber事務所・グループ
+- **ポケカ立ち回り編 (30問・テキスト問題)**: **2026年5月環境**のメタを反映。ドラパルトex / カミツオロチex (Tier1) / タケルライコex / メガルカリオex / オリーヴァex / フーディン / テラスタルバレット / シロナのガブリアスex / Nのゾロアークex / ヤドキング / マリィのオーロンゲex / メガゲッコウガex (ニンジャスピナー) 等の対面立ち回り・サイドプラン・ACE SPEC判断を問う中〜上級向け
 
 **バックエンド不要・完全静的サイト**なのでGitHub Pages等に置くだけで動きます。
 
@@ -70,28 +70,31 @@ VS Codeなら Live Server 拡張、Node環境なら `npx serve` でも可。
 - **ゲームエンジン 3**: Unity / Unreal Engine / Godot
 - **ドローイング 4**: Procreate / Krita / Affinity / Inkscape
 
-### VTuber事務所編 (30問)
+### ポケカ立ち回り編 (30問・テキスト問題)
 
-- **ホロライブ系列 11**: hololive プロダクション / ホロライブ (女性) / Hololive English / Hololive Indonesia / Hololive DEV_IS / Hololive Alternative / HOLOSTARS / HOLOSTARS English / ReGLOSS / Cover Corporation / INNK Music
-- **にじさんじ系列 3**: にじさんじ / NIJISANJI EN / ANYCOLOR
-- **国内・海外大手 5**: VShojo / ぶいすぽっ! / 774 inc. (Nanashi) / HoneyStrap / 有閑喫茶あにまーれ
-- **サブカル系・中堅 3**: あおぎり高校 / Re:AcT / MAHA5
-- **レジェンド・小規模・海外 8**: Kizuna AI / .LIVE / Palette Project / Yume Live / OWOZU / Yumegra / 進化娘 / Re Memories
+**2026年5月 (ニンジャスピナー発売後) のシティリーグ環境** をベースに作問。すべて状況シナリオ+4択+解説形式。
+
+- **ドラパルトex 立ち回り 6問**: タケルライコ戦・ミラー戦 (デヴォリューション)・ルギア対策 (シンオウ神殿)・ロケット団対策・カミツオロチ対面・ヨノワール型 vs サマヨール型の選択
+- **タケルライコex 立ち回り 6問**: リザードン戦のサイドプラン (1-2-2-2)・ミラー戦のコライドン・Nのゾロアーク対面でのベンチ管理・サーナイト戦のボス指令ターゲット・アカマツのタイミング
+- **ACE SPEC・サポート判断 6問**: アンフェアスタンプの使用条件・ボスの指令 vs カウンターキャッチャー・ペパー・ジャッジマンを撃つ場面・プライムキャッチャーとの違い・ビワの役割
+- **デッキ性能とマッチアップ 8問**: メガルカリオex のはどうづき・オリーヴァのおいしげる・カミツオロチの生存戦略・フーディン火力公式・テラスタルバレット弱点選出・Nのゾロアーク草耐性・マリィのオーロンゲ・キュレム OTK
+- **新弾・特殊カード 4問**: メガゲッコウガex (ニンジャスピナー)・シロナのガブリアス・スタジアム使い分け・ジニア/ナンジャモ/博士の研究
+
+> ⚠️ 環境は新弾で変動するため、内容は **2026年5月時点** のシティリーグTier表ベース。実カードのテキストは公式ルールを正としてください。
 
 ## ファイル構成
 
 ```
 ItQuiz/
 ├── index.html              エントリーポイント (カテゴリ選択UI)
-├── style.css               ダーク基調のスタイル
+├── style.css               ダーク基調のスタイル + シナリオブロック / テキストモード
 ├── script.js               150問のクイズデータ + 5カテゴリ出題ロジック
 ├── favicon.svg             タブアイコン
 ├── .nojekyll               GitHub PagesのJekyll処理を無効化
 ├── images/                 マスコット・技術ロゴ画像 (30+点)
 │   ├── companies/          IT企業ロゴ画像 (30点)
 │   ├── advanced/           上級者編マスコット・ロゴ画像 (30点)
-│   ├── art/                アート職編ツールロゴ画像 (30点+α)
-│   └── vtuber/             VTuber事務所ロゴ画像 (30点)
+│   └── art/                アート職編ツールロゴ画像 (30点+α)
 ├── screenshots/            動作確認時のスクリーンショット
 └── README.md
 ```

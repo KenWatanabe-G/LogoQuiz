@@ -11,7 +11,7 @@
   <main class="app">
     <header class="header">
       <h1>ITエンジニア<br />アイコン・企業ロゴ クイズ</h1>
-      <p class="subtitle">マスコット / IT企業 / 上級者 / アート職 / VTuber事務所 各30問</p>
+      <p class="subtitle">マスコット / IT企業 / 上級者 / アート職 / ポケカ立ち回り 各30問</p>
     </header>
 
     <!-- Start screen -->
@@ -57,14 +57,13 @@
           <span class="category-cta category-cta-art">スタート →</span>
         </button>
 
-        <button class="category-card category-card-vtuber" data-category="vtuber" type="button">
-          <div class="category-emoji">🎤🌈⭐</div>
-          <div class="category-name">VTuber事務所編</div>
+        <button class="category-card category-card-poketcg" data-category="poketcg" type="button">
+          <div class="category-emoji">🃏⚡🔥</div>
+          <div class="category-name">ポケカ立ち回り編</div>
           <div class="category-desc">
-            ホロライブ / にじさんじ / ぶいすぽっ! / 774 inc. / VShojo / あおぎり高校 / .LIVE / Kizuna AI…
-            国内外のVTuber事務所・グループ <strong>30問</strong>
+            <strong>2026年5月環境</strong>のメタを反映。ドラパルト / カミツオロチ / タケルライコ / メガルカリオ / オリーヴァ etc. の対面で立ち回りを問う中〜上級向け <strong>30問</strong> (テキスト問題)
           </div>
-          <span class="category-cta category-cta-vtuber">推し当て →</span>
+          <span class="category-cta category-cta-poketcg">挑戦する →</span>
         </button>
       </div>
       <p class="hint-row">どちらも4択・所要約5分。途中で「もう一度挑戦する」を押すとカテゴリ選択に戻れます。</p>
@@ -84,6 +83,7 @@
         <div class="image-frame">
           <img id="q-image" alt="quiz icon" />
         </div>
+        <div id="q-scenario" class="scenario hidden"></div>
         <h3 id="q-prompt">このアイコン/マスコットはどの技術のもの?</h3>
         <div id="choices" class="choices"></div>
         <div id="feedback" class="feedback hidden"></div>
